@@ -33,7 +33,7 @@ app.post("/", function (req, res) {
   const url = "https://us13.api.mailchimp.com/3.0/lists/f7ffc02c90";
   const options = {
     method: "POST",
-    auth: "MZein:eb1f9dac3a2acb027b15824e243b77bc-us13hnod",
+    auth: "MZein:eb1f9dac3a2acb027b15824e243b77bc-us13",
   };
 
   const request = https.request(url, options, function (response) {
@@ -50,7 +50,7 @@ app.post("/", function (req, res) {
   request.write(jsonData);
   request.end();
 
-  // Here you can handle the form data, e.g., save it to a database
+// Here you can handle the form data, e.g., save it to a database
 });
 
 ///route for failure
